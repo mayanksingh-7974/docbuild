@@ -66,6 +66,14 @@ docbuild.models.deliverable.Deliverable
 
 
 
+   .. py:property:: default_deliverables
+      :type: collections.abc.Iterator[Self]
+
+
+      Yield all deliverables defined in the docset's default locale.
+
+
+
    .. py:property:: branch
       :type: str
 
@@ -103,6 +111,14 @@ docbuild.models.deliverable.Deliverable
 
 
       Return enabled output formats normalized to booleans.
+
+
+
+   .. py:property:: lifecycle
+      :type: docbuild.models.lifecycle.LifecycleFlag
+
+
+      Return the lifecycle of the containing docset.
 
 
 

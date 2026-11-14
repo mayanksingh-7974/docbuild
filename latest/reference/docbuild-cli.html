@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>docbuild CLI &#8212; Docbuild Documentation 0.25.1.dev22+g856a98299.d20261016</title>
+    <title>docbuild CLI &#8212; Docbuild Documentation 0.25.1.dev106+g6c23b6d97.d20261114</title>
   
   
   
@@ -26,30 +26,31 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=75c7c72ae941e8b558d8" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_autodoc_typehints.css?v=057ac668" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0a0e13a7" />
   
   <!-- So that users can add custom icons -->
-  <script defer src="../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <script defer src="../_static/scripts/fontawesome.js?digest=75c7c72ae941e8b558d8"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8" />
 
-    <script src="../_static/documentation_options.js?v=c697f52b"></script>
+    <script src="../_static/documentation_options.js?v=2e120f9e"></script>
     <script src="../_static/doctools.js?v=fd6eb6e6"></script>
     <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
-    <script src="../_static/copybutton.js?v=6f874712"></script>
+    <script src="../_static/copybutton.js?v=7e8f0003"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'reference/docbuild-cli';</script>
     <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.23.0';
+        DOCUMENTATION_OPTIONS.theme_version = '0.24.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://opensuse.github.io/docbuild/versions.json';
         DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'latest';
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
@@ -64,7 +65,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="color-scheme" content="light dark"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="0.25.0" />
+  <meta name="docsearch:version" content="0.30.0" />
   
     
     <script src="../_static/searchtools.js"></script>
@@ -112,7 +113,7 @@
   
     <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation" aria-expanded="false" aria-controls="pst-primary-sidebar-modal">
     <span class="fa-solid fa-bars"></span>
   </button>
   
@@ -211,14 +212,14 @@
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
   <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
-    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
   </ul>
 </div></div>
       
@@ -258,7 +259,7 @@
   
 
   
-    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page" aria-expanded="false" aria-controls="pst-secondary-sidebar-modal">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -272,7 +273,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <dialog id="pst-primary-sidebar-modal" tabindex="-1"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
@@ -336,14 +337,14 @@
 
 <div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
   <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
-    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto" title="System Settings"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
-    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg me-1"></i>Dark</button></li>
   </ul>
 </div></div>
         
@@ -391,8 +392,19 @@
 <li class="toctree-l2"><a class="reference internal" href="_autoapi/docbuild/__about__/index.html">docbuild.__about__</a></li>
 <li class="toctree-l2"><a class="reference internal" href="_autoapi/docbuild/__main__/index.html">docbuild.__main__</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/index.html">docbuild.cli</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/alias/index.html">docbuild.cli.alias</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/alias/AliasGroup.html">docbuild.cli.alias.AliasGroup</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/callback/index.html">docbuild.cli.callback</a></li>
-<li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_build/index.html">docbuild.cli.cmd_build</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_build/index.html">docbuild.cli.cmd_build</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_build/cmd_dir/index.html">docbuild.cli.cmd_build.cmd_dir</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_build/cmd_index/index.html">docbuild.cli.cmd_build.cmd_index</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_build/cmd_llms/index.html">docbuild.cli.cmd_build.cmd_llms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_build/cmd_run/index.html">docbuild.cli.cmd_build.cmd_run</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_build/cmd_sitemap/index.html">docbuild.cli.cmd_build.cmd_sitemap</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_c14n/index.html">docbuild.cli.cmd_c14n</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_cache/index.html">docbuild.cli.cmd_cache</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_cli/index.html">docbuild.cli.cmd_cli</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -400,17 +412,22 @@
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_config/index.html">docbuild.cli.cmd_config</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_config/init/index.html">docbuild.cli.cmd_config.init</a></li>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_config/list/index.html">docbuild.cli.cmd_config.list</a></li>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_config/theme/index.html">docbuild.cli.cmd_config.theme</a></li>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_config/validate/index.html">docbuild.cli.cmd_config.validate</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_doctor/index.html">docbuild.cli.cmd_doctor</a></li>
-<li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_llms/index.html">docbuild.cli.cmd_llms</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_metadata/index.html">docbuild.cli.cmd_metadata</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_portal/index.html">docbuild.cli.cmd_portal</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_portal/cmd_dir/index.html">docbuild.cli.cmd_portal.cmd_dir</a></li>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_portal/cmd_list/index.html">docbuild.cli.cmd_portal.cmd_list</a></li>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_portal/cmd_validate/index.html">docbuild.cli.cmd_portal.cmd_validate</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_publish/index.html">docbuild.cli.cmd_publish</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_publish/cmd_run/index.html">docbuild.cli.cmd_publish.cmd_run</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_repo/index.html">docbuild.cli.cmd_repo</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -419,12 +436,17 @@
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/cmd_repo/cmd_list/index.html">docbuild.cli.cmd_repo.cmd_list</a></li>
 </ul>
 </details></li>
+<li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/completion/index.html">docbuild.cli.completion</a></li>
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/console/index.html">docbuild.cli.console</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/context/index.html">docbuild.cli.context</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/context/DocBuildContext.html">docbuild.cli.context.DocBuildContext</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/cli/defaults/index.html">docbuild.cli.defaults</a></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/message/index.html">docbuild.cli.message</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/message/Message.html">docbuild.cli.message.Message</a></li>
+</ul>
+</details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/cli/theme/index.html">docbuild.cli.theme</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/theme/ThemeTag.html">docbuild.cli.theme.ThemeTag</a></li>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/cli/theme/ModeStyle.html">docbuild.cli.theme.ModeStyle</a></li>
@@ -453,7 +475,10 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="_autoapi/docbuild/constants/index.html">docbuild.constants</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="_autoapi/docbuild/constants/index.html">docbuild.constants</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/constants/DependencySpec.html">docbuild.constants.DependencySpec</a></li>
+</ul>
+</details></li>
 <li class="toctree-l2"><a class="reference internal" href="_autoapi/docbuild/logging/index.html">docbuild.logging</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="_autoapi/docbuild/models/index.html">docbuild.models</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/models/cache/index.html">docbuild.models.cache</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -528,6 +553,7 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="_autoapi/docbuild/utils/index.html">docbuild.utils</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/utils/concurrency/index.html">docbuild.utils.concurrency</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/concurrency/TaskFailedError.html">docbuild.utils.concurrency.TaskFailedError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/concurrency/sentinel.html">docbuild.utils.concurrency.sentinel</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/utils/contextmgr/index.html">docbuild.utils.contextmgr</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -538,6 +564,15 @@
 <li class="toctree-l3"><a class="reference internal" href="_autoapi/docbuild/utils/convert/index.html">docbuild.utils.convert</a></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/utils/decorators/index.html">docbuild.utils.decorators</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/decorators/RegistryDecorator.html">docbuild.utils.decorators.RegistryDecorator</a></li>
+</ul>
+</details></li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/utils/display/index.html">docbuild.utils.display</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/display/ItemState.html">docbuild.utils.display.ItemState</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/display/MofNColumn.html">docbuild.utils.display.MofNColumn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/display/StageProgress.html">docbuild.utils.display.StageProgress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/display/Item.html">docbuild.utils.display.Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/display/Stage.html">docbuild.utils.display.Stage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="_autoapi/docbuild/utils/display/LiveProgressManager.html">docbuild.utils.display.LiveProgressManager</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="_autoapi/docbuild/utils/doc/index.html">docbuild.utils.doc</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -608,7 +643,7 @@
     
     <li class="breadcrumb-item breadcrumb-home">
       <a href="../index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
+        <i class="fa-solid fa-house"></i>
       </a>
     </li>
     
@@ -705,62 +740,120 @@
 
 <section id="docbuild-build">
 <h3>build<a class="headerlink" href="#docbuild-build" title="Link to this heading">#</a></h3>
-<p>CLI interface to build a document.</p>
-<p>A document (or “doctype”) consists of [PRODUCT]/[DOCSET][&#64;LIFECYCLES]/LANGS
-with the following properties:</p>
-<div class="line-block">
-<div class="line">* (Optional) PRODUCT is the product. To mark “ALL” products, omit the</div>
-<div class="line-block">
-<div class="line">product or use “*”</div>
+<p>Build documentation products and deliverables.</p>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>build<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
 </div>
-<div class="line">* (Optional) DOCSET is the docset, usually the version or release of</div>
+<section id="docbuild-build-dir">
+<h4>dir<a class="headerlink" href="#docbuild-build-dir" title="Link to this heading">#</a></h4>
+<p>Print the directory where build data is stored.</p>
+<p>This command outputs the raw path to the target base directory,
+making it ideal for use in scripts.</p>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>build<span class="w"> </span>dir<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="docbuild-build-index">
+<h4>index<a class="headerlink" href="#docbuild-build-index" title="Link to this heading">#</a></h4>
+<p>Generate index HTML pages for deliverables using Jinja templates.</p>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>build<span class="w"> </span>index<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>DOCTYPES...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-build-index-keep-index">
+<span class="sig-name descname"><span class="pre">--keep-index</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-index-keep-index" title="Link to this definition">#</a></dt>
+<dd><p>Rename existing index.html to index.html.bak before generating.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-build-index-arg-DOCTYPES">
+<span class="sig-name descname"><span class="pre">DOCTYPES</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-index-arg-DOCTYPES" title="Link to this definition">#</a></dt>
+<dd><p>Required argument(s)</p>
+</dd></dl>
+
+</section>
+<section id="docbuild-build-llms">
+<h4>llms<a class="headerlink" href="#docbuild-build-llms" title="Link to this heading">#</a></h4>
+<p>Generate Markdown and llms.txt files for an existing build directory.</p>
+<p>This command scans the target base directory configured in your environment
+(defined as ‘paths.target.target_base_dir’ in env.toml), cleans the HTML
+files found within, converts them to Markdown, and generates the root
+llms.txt index file.</p>
+<p>It also automatically injects the &lt;link rel=”alternate”&gt; tags into the
+existing HTML files pointing to the new Markdown counterparts.</p>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>build<span class="w"> </span>llms<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="docbuild-build-run">
+<h4>run<a class="headerlink" href="#docbuild-build-run" title="Link to this heading">#</a></h4>
+<p>Build a documentation deliverables from source.</p>
+<p>A document (or “doctype”) consists of the following syntax:</p>
+<blockquote>
+<div><p>[PRODUCT]/[DOCSET][&#64;LIFECYCLES]/LANGS</p>
+</div></blockquote>
+<p>With the following properties:</p>
+<div class="line-block">
+<div class="line">* (Optional) ‘PRODUCT’ is the product. To mark “ALL” products, omit the</div>
+<div class="line-block">
+<div class="line">product or use ‘*’</div>
+</div>
+<div class="line">* (Optional) ‘DOCSET’ is the docset, usually the version or release of</div>
 <div class="line-block">
 <div class="line">a product.</div>
-<div class="line">To mark “ALL” docsets, omit the docset or use “*”.</div>
+<div class="line">To mark “ALL” docsets, omit the docset or use ‘*’.</div>
 </div>
-<div class="line">* (Optional) LIFECYCLES marks a list of lifecycles separated by comma</div>
+<div class="line">* (Optional) <code class="docutils literal notranslate"><span class="pre">LIFECYCLES</span></code> marks a list of lifecycles separated by comma</div>
 <div class="line-block">
 <div class="line">or pipe symbol.</div>
 <div class="line">A lifecycle can be one of the values ‘supported’, ‘unsupported’, ‘beta’,</div>
-<div class="line">or ‘hidden’.</div>
+<div class="line">or ‘unpublished’.</div>
 </div>
-<div class="line">* LANGS marks a list of languages separated by comma. Every single</div>
+<div class="line">* ‘LANGS’ marks a list of languages separated by comma. Every single</div>
 <div class="line-block">
 <div class="line">language contains a LANGUAGE-COUNTRY syntax, for example ‘en-us’, ‘de-de’ etc.</div>
 </div>
 </div>
-<p>Examples of the doctypes syntax:</p>
 <div class="line-block">
-<div class="line">* “//en-us”</div>
+<div class="line">Examples:</div>
+<div class="line">* docbuild build run “//en-us”</div>
 <div class="line-block">
 <div class="line">Builds all supported deliverables for English</div>
 </div>
-<div class="line">* “sles/<a href="#id1"><span class="problematic" id="id2">*</span></a>/en-us”</div>
+</div>
+<div class="line-block">
+<div class="line">* docbuild build run “sles/<a href="#id1"><span class="problematic" id="id2">*</span></a>/en-us”</div>
 <div class="line-block">
 <div class="line">Builds only SLES deliverables which are supported and in English</div>
 </div>
-<div class="line">* “sles/<a href="#id3"><span class="problematic" id="id4">*</span></a>&#64;unsupported/en-us,de-de”</div>
+</div>
+<div class="line-block">
+<div class="line">* docbuild build run “sles/<a href="#id3"><span class="problematic" id="id4">*</span></a>&#64;unsupported/en-us,de-de”</div>
 <div class="line-block">
 <div class="line">Builds all English and German SLES releases which are unsupported</div>
 </div>
-<div class="line">* “<a class="reference external" href="mailto:sles/&#37;&#52;&#48;beta|supported/de-de">sles/<span>&#64;</span>beta|supported/de-de</a>”</div>
-<div class="line-block">
-<div class="line">Build all docsets that are supported and beta for German SLES.</div>
 </div>
-<div class="line">* “<a class="reference external" href="mailto:sles/&#37;&#52;&#48;beta">sles/<span>&#64;</span>beta</a>,supported/de-de”</div>
+<div class="line-block">
+<div class="line">* docbuild build run “<a class="reference external" href="mailto:sles/&#37;&#52;&#48;beta">sles/<span>&#64;</span>beta</a>,supported/de-de”</div>
 <div class="line-block">
 <div class="line">Same as the previous one, but with comma as the separator between</div>
 <div class="line">the lifecycle states.</div>
 </div>
 </div>
 <p class="rubric">Usage</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>build<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>DOCTYPES<span class="o">]</span>...
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>build<span class="w"> </span>run<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>DOCTYPES<span class="o">]</span>...
 </pre></div>
 </div>
 <p class="rubric">Options</p>
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-docbuild-build-S">
-<span id="cmdoption-docbuild-build-skip-repo-update"></span><span class="sig-name descname"><span class="pre">-S</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--skip-repo-update</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-S" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object std" id="cmdoption-docbuild-build-run-S">
+<span id="cmdoption-docbuild-build-run-skip-repo-update"></span><span class="sig-name descname"><span class="pre">-S</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--skip-repo-update</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-run-S" title="Link to this definition">#</a></dt>
 <dd><p>Skip updating git repositories before processing.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Default<span class="colon">:</span></dt>
@@ -770,8 +863,8 @@ with the following properties:</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-docbuild-build-M">
-<span id="cmdoption-docbuild-build-skip-metadata"></span><span class="sig-name descname"><span class="pre">-M</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--skip-metadata</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-M" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object std" id="cmdoption-docbuild-build-run-M">
+<span id="cmdoption-docbuild-build-run-skip-metadata"></span><span class="sig-name descname"><span class="pre">-M</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--skip-metadata</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-run-M" title="Link to this definition">#</a></dt>
 <dd><p>Skip generating metadata (runs before build by default).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Default<span class="colon">:</span></dt>
@@ -780,17 +873,48 @@ with the following properties:</p>
 </dl>
 </dd></dl>
 
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-build-run-sitemap">
+<span id="cmdoption-docbuild-build-run-no-sitemap"></span><span class="sig-name descname"><span class="pre">--sitemap</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--no-sitemap</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-run-sitemap" title="Link to this definition">#</a></dt>
+<dd><p>Generate a sitemap.xml in the target root after building.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">True</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-build-run-L">
+<span id="cmdoption-docbuild-build-run-live"></span><span class="sig-name descname"><span class="pre">-L</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--live</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-run-L" title="Link to this definition">#</a></dt>
+<dd><p>Enable live progress view.</p>
+</dd></dl>
+
 <p class="rubric">Arguments</p>
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-docbuild-build-arg-DOCTYPES">
-<span class="sig-name descname"><span class="pre">DOCTYPES</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-arg-DOCTYPES" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object std" id="cmdoption-docbuild-build-run-arg-DOCTYPES">
+<span class="sig-name descname"><span class="pre">DOCTYPES</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-build-run-arg-DOCTYPES" title="Link to this definition">#</a></dt>
 <dd><p>Optional argument(s)</p>
 </dd></dl>
 
 </section>
+<section id="docbuild-build-sitemap">
+<h4>sitemap<a class="headerlink" href="#docbuild-build-sitemap" title="Link to this heading">#</a></h4>
+<p>Generate a sitemap.xml in the target distribution directory.</p>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>build<span class="w"> </span>sitemap<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+</section>
 <section id="docbuild-c14n">
 <h3>c14n<a class="headerlink" href="#docbuild-c14n" title="Link to this heading">#</a></h3>
-<p>CLI interface to apply canonicals.</p>
+<p>CLI interface to apply canonicals (canonicalization = c14n).</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context object.</p>
+</dd>
+</dl>
 <p class="rubric">Usage</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>c14n<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
@@ -883,11 +1007,20 @@ with the following properties:</p>
 </div>
 <section id="docbuild-check-files">
 <h4>files<a class="headerlink" href="#docbuild-check-files" title="Link to this heading">#</a></h4>
-<p>Verify that DC files exist. Optional: specify ‘product/version/lang’.</p>
+<p>Verify that DC files exist.</p>
+<p>Provide one or more doctypes in ‘product/version/lang’ format, or use
+<code class="docutils literal notranslate"><span class="pre">--all</span></code> to check every DC file. The two ways are mutually exclusive.</p>
 <p class="rubric">Usage</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>check<span class="w"> </span>files<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>DOCTYPES<span class="o">]</span>...
 </pre></div>
 </div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-check-files-all">
+<span class="sig-name descname"><span class="pre">--all</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-check-files-all" title="Link to this definition">#</a></dt>
+<dd><p>Check all DC files (all products, docsets, and languages).</p>
+</dd></dl>
+
 <p class="rubric">Arguments</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-docbuild-check-files-arg-DOCTYPES">
@@ -904,6 +1037,62 @@ with the following properties:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>config<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
 </pre></div>
 </div>
+<section id="docbuild-config-init">
+<h4>init<a class="headerlink" href="#docbuild-config-init" title="Link to this heading">#</a></h4>
+<p>Create default configuration in the user configuration directory.</p>
+<p>With no flags, create both files. Existing files are never overwritten.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context holding the global dry-run option.</p>
+</dd>
+<dt class="field-even">param app<span class="colon">:</span></dt>
+<dd class="field-even"><p>Create application configuration.</p>
+</dd>
+<dt class="field-odd">param env<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Create environment configuration.</p>
+</dd>
+<dt class="field-even">param role<span class="colon">:</span></dt>
+<dd class="field-even"><p>Environment role or alias for the generated configuration.</p>
+</dd>
+<dt class="field-odd">raises click.UsageError<span class="colon">:</span></dt>
+<dd class="field-odd"><p>If an explicit role is combined with –app.</p>
+</dd>
+<dt class="field-even">raises click.ClickException<span class="colon">:</span></dt>
+<dd class="field-even"><p>If a destination exists or cannot be written.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>config<span class="w"> </span>init<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-config-init-app">
+<span class="sig-name descname"><span class="pre">--app</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-config-init-app" title="Link to this definition">#</a></dt>
+<dd><p>Create only application configuration.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-config-init-env">
+<span class="sig-name descname"><span class="pre">--env</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-config-init-env" title="Link to this definition">#</a></dt>
+<dd><p>Create only environment configuration.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-config-init-role">
+<span class="sig-name descname"><span class="pre">--role</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;role&gt;</span></span><a class="headerlink" href="#cmdoption-docbuild-config-init-role" title="Link to this definition">#</a></dt>
+<dd><p>Role of the environment file to create, written as env.&lt;ROLE&gt;.toml. Available roles: production, staging, testing.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Default<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">'production'</span></code></p>
+</dd>
+<dt class="field-even">Options<span class="colon">:</span></dt>
+<dd class="field-even"><p>PRODUCTION | STAGING | TESTING | PROD | P | prod | p | STAGE | S | stage | s | TEST | T | test | t | DEVEL | devel | DEV | dev</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 <section id="docbuild-config-list">
 <h4>list<a class="headerlink" href="#docbuild-config-list" title="Link to this heading">#</a></h4>
 <p>List the configuration as JSON or flat text.</p>
@@ -993,7 +1182,8 @@ with the following properties:</p>
 <p>This checks the syntax and schema of application and environment files.</p>
 <dl class="field-list simple">
 <dt class="field-odd">param ctx<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The Click context object, which should already have loaded configurations.</p>
+<dd class="field-odd"><p>The Click context object, which should already have loaded
+configurations.</p>
 </dd>
 </dl>
 <p class="rubric">Usage</p>
@@ -1010,31 +1200,64 @@ with the following properties:</p>
 </pre></div>
 </div>
 </section>
-<section id="docbuild-llms">
-<h3>llms<a class="headerlink" href="#docbuild-llms" title="Link to this heading">#</a></h3>
-<p>Generate Markdown and llms.txt files for an existing build directory.</p>
-<p>This command scans the target base directory configured in your environment
-(defined as ‘paths.target.target_base_dir’ in env.toml), cleans the HTML
-files found within, converts them to Markdown, and generates the root
-llms.txt index file.</p>
-<p>It also automatically injects the &lt;link rel=”alternate”&gt; tags into the
-existing HTML files pointing to the new Markdown counterparts.</p>
-<p class="rubric">Usage</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>llms<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
-</pre></div>
-</div>
-</section>
 <section id="docbuild-metadata">
 <h3>metadata<a class="headerlink" href="#docbuild-metadata" title="Link to this heading">#</a></h3>
 <p>Extracts metadata from deliverables.</p>
 <p class="rubric">Usage</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>metadata<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>DOCTYPES<span class="o">]</span>...
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>metadata<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<section id="docbuild-metadata-dir">
+<h4>dir<a class="headerlink" href="#docbuild-metadata-dir" title="Link to this heading">#</a></h4>
+<p>Display the directory where metadata is stored.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context object.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>metadata<span class="w"> </span>dir<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
 </div>
 <p class="rubric">Options</p>
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-E">
-<span id="cmdoption-docbuild-metadata-exitfirst"></span><span class="sig-name descname"><span class="pre">-E</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--exitfirst</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-E" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-dir-meta">
+<span class="sig-name descname"><span class="pre">--meta</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-dir-meta" title="Link to this definition">#</a></dt>
+<dd><p>Display the meta_cache_dir instead of the json_cache_dir.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-dir-json">
+<span class="sig-name descname"><span class="pre">--json</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-dir-json" title="Link to this definition">#</a></dt>
+<dd><p>Display the json_cache_dir (default).</p>
+</dd></dl>
+
+</section>
+<section id="docbuild-metadata-run">
+<h4>run<a class="headerlink" href="#docbuild-metadata-run" title="Link to this heading">#</a></h4>
+<p>Extract metadata from deliverables.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context object.</p>
+</dd>
+<dt class="field-even">param doctypes<span class="colon">:</span></dt>
+<dd class="field-even"><p>Target doctypes to extract metadata for.</p>
+</dd>
+<dt class="field-odd">param exitfirst<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Whether to exit on the first failed deliverable.</p>
+</dd>
+<dt class="field-even">param skip_repo_update<span class="colon">:</span></dt>
+<dd class="field-even"><p>Whether to skip repository updates.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>metadata<span class="w"> </span>run<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>DOCTYPES<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-run-E">
+<span id="cmdoption-docbuild-metadata-run-exitfirst"></span><span class="sig-name descname"><span class="pre">-E</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--exitfirst</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-run-E" title="Link to this definition">#</a></dt>
 <dd><p>Exit on first failed deliverable.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Default<span class="colon">:</span></dt>
@@ -1044,8 +1267,8 @@ existing HTML files pointing to the new Markdown counterparts.</p>
 </dd></dl>
 
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-S">
-<span id="cmdoption-docbuild-metadata-skip-repo-update"></span><span class="sig-name descname"><span class="pre">-S</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--skip-repo-update</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-S" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-run-S">
+<span id="cmdoption-docbuild-metadata-run-skip-repo-update"></span><span class="sig-name descname"><span class="pre">-S</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--skip-repo-update</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-run-S" title="Link to this definition">#</a></dt>
 <dd><p>Skip updating git repositories before processing.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Default<span class="colon">:</span></dt>
@@ -1056,11 +1279,12 @@ existing HTML files pointing to the new Markdown counterparts.</p>
 
 <p class="rubric">Arguments</p>
 <dl class="std option">
-<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-arg-DOCTYPES">
-<span class="sig-name descname"><span class="pre">DOCTYPES</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-arg-DOCTYPES" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object std" id="cmdoption-docbuild-metadata-run-arg-DOCTYPES">
+<span class="sig-name descname"><span class="pre">DOCTYPES</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-metadata-run-arg-DOCTYPES" title="Link to this definition">#</a></dt>
 <dd><p>Optional argument(s)</p>
 </dd></dl>
 
+</section>
 </section>
 <section id="docbuild-portal">
 <h3>portal<a class="headerlink" href="#docbuild-portal" title="Link to this heading">#</a></h3>
@@ -1069,6 +1293,26 @@ existing HTML files pointing to the new Markdown counterparts.</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>portal<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
 </pre></div>
 </div>
+<section id="docbuild-portal-dir">
+<h4>dir<a class="headerlink" href="#docbuild-portal-dir" title="Link to this heading">#</a></h4>
+<p>Display the portal configuration directory.</p>
+<dl class="simple">
+<dt>Example:</dt><dd><p>docbuild portal dir</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context object.</p>
+</dd>
+<dt class="field-even">returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>(None) Prints the resolved directory path to stdout.</p>
+</dd>
+</dl>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>portal<span class="w"> </span>dir<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</section>
 <section id="docbuild-portal-list">
 <h4>list<a class="headerlink" href="#docbuild-portal-list" title="Link to this heading">#</a></h4>
 <p>List products, docsets, and deliverables from the portal config.</p>
@@ -1152,6 +1396,17 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
 <section id="docbuild-portal-validate">
 <h4>validate<a class="headerlink" href="#docbuild-portal-validate" title="Link to this heading">#</a></h4>
 <p>Validate Portal XML configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context object.</p>
+</dd>
+<dt class="field-even">param main_portal_config<span class="colon">:</span></dt>
+<dd class="field-even"><p>main Portal XML config file to validate.</p>
+</dd>
+<dt class="field-odd">param portal_schema<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Portal schema file to use for validation.</p>
+</dd>
+</dl>
 <p class="rubric">Usage</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>portal<span class="w"> </span>validate<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
@@ -1171,6 +1426,52 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
 
 </section>
 </section>
+<section id="docbuild-publish">
+<h3>publish<a class="headerlink" href="#docbuild-publish" title="Link to this heading">#</a></h3>
+<p>Publish documentation deliverables to a remote destination.</p>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>publish<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>COMMAND<span class="w"> </span><span class="o">[</span>ARGS<span class="o">]</span>...
+</pre></div>
+</div>
+<section id="docbuild-publish-run">
+<h4>run<a class="headerlink" href="#docbuild-publish-run" title="Link to this heading">#</a></h4>
+<p>Publish built documentation deliverables to a remote destination.</p>
+<p>A document (or “doctype”) consists of the following syntax:</p>
+<blockquote>
+<div><p>[PRODUCT]/[DOCSET][&#64;LIFECYCLES]/LANGS</p>
+</div></blockquote>
+<p class="rubric">Usage</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>publish<span class="w"> </span>run<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>DOCTYPES<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-publish-run-with-server-files">
+<span id="cmdoption-docbuild-publish-run-without-server-files"></span><span class="sig-name descname"><span class="pre">--with-server-files</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--without-server-files</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-publish-run-with-server-files" title="Link to this definition">#</a></dt>
+<dd><p>Stage and publish server root files (assets, robots.txt, etc.). Enabled by default.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-publish-run-n">
+<span id="cmdoption-docbuild-publish-run-dry-run"></span><span class="sig-name descname"><span class="pre">-n</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--dry-run</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-publish-run-n" title="Link to this definition">#</a></dt>
+<dd><p>Perform a trial run with no changes made.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-publish-run-y">
+<span id="cmdoption-docbuild-publish-run-yes"></span><span class="sig-name descname"><span class="pre">-y</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--yes</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-publish-run-y" title="Link to this definition">#</a></dt>
+<dd><p>Confirm publishing without prompting.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-publish-run-arg-DOCTYPES">
+<span class="sig-name descname"><span class="pre">DOCTYPES</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-publish-run-arg-DOCTYPES" title="Link to this definition">#</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</section>
+</section>
 <section id="docbuild-repo">
 <h3>repo<a class="headerlink" href="#docbuild-repo" title="Link to this heading">#</a></h3>
 <p>Manage repositories.</p>
@@ -1180,17 +1481,35 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
 </div>
 <section id="docbuild-repo-clone">
 <h4>clone<a class="headerlink" href="#docbuild-repo-clone" title="Link to this heading">#</a></h4>
-<p>Clone repositories.</p>
+<p>Clone repositories into permanent directory.</p>
+<p>Choose exactly one mode: provide one or more repository arguments,
+or use –all to clone all configured repositories. Do not combine them.</p>
 <p>Pass any of the following URLs to clone:</p>
 <div class="line-block">
 <div class="line">* HTTPS URLs like <code class="docutils literal notranslate"><span class="pre">https://github.com/org/repo.git</span></code></div>
 <div class="line">* SSH URLS like <a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:org/repo.git</div>
 <div class="line">* Abbreviated URLs like ‘org/repo’</div>
 </div>
+<dl class="field-list simple">
+<dt class="field-odd">param repos<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A tuple of repository selectors. If empty, all repos
+are cloned.</p>
+</dd>
+<dt class="field-even">param ctx<span class="colon">:</span></dt>
+<dd class="field-even"><p>The Click context object.</p>
+</dd>
+</dl>
 <p class="rubric">Usage</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>repo<span class="w"> </span>clone<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span><span class="o">[</span>REPOS<span class="o">]</span>...
 </pre></div>
 </div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-docbuild-repo-clone-all">
+<span class="sig-name descname"><span class="pre">--all</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-docbuild-repo-clone-all" title="Link to this definition">#</a></dt>
+<dd><p>Clone all configured repositories instead of specifying REPOS.</p>
+</dd></dl>
+
 <p class="rubric">Arguments</p>
 <dl class="std option">
 <dt class="sig sig-object std" id="cmdoption-docbuild-repo-clone-arg-REPOS">
@@ -1202,6 +1521,13 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
 <section id="docbuild-repo-dir">
 <h4>dir<a class="headerlink" href="#docbuild-repo-dir" title="Link to this heading">#</a></h4>
 <p>Show the directory path for permanent repositories.</p>
+<p>Outputs the path to the repository directory defined
+in the environment configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context object.</p>
+</dd>
+</dl>
 <p class="rubric">Usage</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>repo<span class="w"> </span>dir<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
@@ -1210,6 +1536,15 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
 <section id="docbuild-repo-list">
 <h4>list<a class="headerlink" href="#docbuild-repo-list" title="Link to this heading">#</a></h4>
 <p>List the available permanent repositories.</p>
+<p>Outputs the directory names of all repositories defined in the
+environment configuration.
+If no repositories are defined, it outputs a message indicating that
+no repositories are available.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param ctx<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The Click context object.</p>
+</dd>
+</dl>
 <p class="rubric">Usage</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docbuild<span class="w"> </span>repo<span class="w"> </span>list<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
 </pre></div>
@@ -1254,7 +1589,7 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <dialog id="pst-secondary-sidebar-modal" tabindex="-1"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
@@ -1267,7 +1602,14 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild">docbuild</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-build">build</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-build">build</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-build-dir">dir</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-build-index">index</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-build-llms">llms</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-build-run">run</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-build-sitemap">sitemap</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-c14n">c14n</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-cache">cache</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-cache-dir">dir</a></li>
@@ -1280,17 +1622,26 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-config">config</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-config-init">init</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-config-list">list</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-config-theme">theme</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-config-validate">validate</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-doctor">doctor</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-llms">llms</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-metadata">metadata</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-metadata">metadata</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-metadata-dir">dir</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-metadata-run">run</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-portal">portal</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-portal-dir">dir</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-portal-list">list</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-portal-validate">validate</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-publish">publish</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-publish-run">run</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#docbuild-repo">repo</a><ul class="nav section-nav flex-column">
@@ -1342,8 +1693,8 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=75c7c72ae941e8b558d8"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=75c7c72ae941e8b558d8"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -1376,7 +1727,7 @@ Format: PRODUCT/DOCSETS[&#64;LIFECYCLES]/LANGS</p>
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.24.0.
 </p></div>
       
     </div>
